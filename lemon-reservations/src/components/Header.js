@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <h1>Little Lemon</h1>
-            <img src="../../public/lemon_logo.png" alt=""
+            <img src="/icons_assets/Logo.svg" alt=""
             height="50" width="150"/>
         </header>
     );
