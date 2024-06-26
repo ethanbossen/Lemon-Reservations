@@ -159,6 +159,8 @@
         overflow: hidden;
         padding-bottom: 0;
         transition: padding-bottom 0.5s ease-in-out;
+        background-color: #EDEDED;
+
 
       }
 
@@ -173,9 +175,41 @@
         text-align: start;
       }
 
-      .heroLandingHeading h2, h4 {
+      .heroContainerContents {
+        margin-top: 50px;
+        display: flex;
+        align-content: start;
+        text-align: left;
+        flex-direction: row;
+
+      }
+
+      .heroContainerContents p {
+        max-width: 65%;
+        margin-left: 40px;
+      }
+      .heroContainerContents button {
+        margin-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      .heroLandingHeading h2 {
+        font-size: xx-large;
         margin: 0;
       }
+
+      .heroLandingHeading h4 {
+        font-size: x-large;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .heroLandingImgContainer {
+        align-content: center;
+        align-items: center;
+        padding-right: 25px;
+        filter: drop-shadow(0px 10px 5px #495E57);
+        }
 
       .heroLandingContainer > div > p {
         margin-left: 40px;
@@ -188,9 +222,7 @@
 
       }
 
-      .heroLandingContainer > div > img {
 
-      }
 
       .reservations {
         padding: 20px;
@@ -200,10 +232,11 @@
 
       .heroLandingContainer button {
         z-index: 1100;
+
       }
 
       .heroLandingContainer .reservations-show {
-        bottom: 0; /* Slide into view */
+        bottom: 0;
       }
 
       .reservations-wrapper {

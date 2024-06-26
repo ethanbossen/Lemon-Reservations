@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Reservations from './Reservations'; // Ensure this path is correct
 
 const HeroLanding = () => {
@@ -10,22 +10,29 @@ const HeroLanding = () => {
 
     return (
         <div className="heroLandingContainer">
-            <div className="heroLandingHeading">
-                <h2>Little Lemon</h2>
-                <h4>Chicago</h4>
+
+            <div className="heroContainerContents">
+                <div>
+                    <div className="heroLandingHeading">
+                        <h2>Little Lemon</h2>
+                        <h4>Chicago</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dignissimos,
+                        distinctio eos error et eveniet impedit laborum minima mollitia nam omnis placeat provident
+                        quam,
+                        quod reiciendis rerum saepe totam.
+                    </p>
+
+                </div>
+                <div className="heroLandingImgContainer">
+                    <img className="heroLandingImg" src="/icons_assets/bruchetta.svg" alt="Little Lemon Bruchetta"/>
+                </div>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dignissimos,
-                    distinctio eos error et eveniet impedit laborum minima mollitia nam omnis placeat provident quam,
-                    quod reiciendis rerum saepe totam.
-                </p>
+            <div className="heroContainerContents">
                 <button onClick={toggleReservations}>Reserve Table</button>
             </div>
-            <div>
-                <img className="heroLandingImg" src="/icons_assets/bruchetta.svg" alt="Little Lemon Bruchetta"/>
-            </div>
             <div className={`reservations-wrapper ${showReservations ? 'show' : ''}`}>
-                <Reservations />
+                <Reservations/>
             </div>
         </div>
     );
