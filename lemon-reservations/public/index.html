@@ -44,6 +44,8 @@
         max-height: auto;
       }
 
+
+
       button {
         background-color: #495E57;
         border: none;
@@ -73,6 +75,7 @@
         justify-content: space-between;
         align-items: center;
         height: 10%;
+        color: #495E57;
       }
 
       .nav-items {
@@ -84,15 +87,31 @@
 
       .nav-items > li {
         margin-right: 15px;
+        color: #495E57;
       }
 
       .nav-items > li:last-child {
         margin-right: 0;
       }
 
+
       .nav-items > li > a {
         text-decoration: none;
+        color: #495E57;
       }
+
+      .nav-items > li > a:visited {
+        color: #495E57;
+      }
+
+      .nav-items > li > a:hover {
+        color: #F4CE14;
+      }
+
+      .nav-items > li > a:active {
+        color: #F4CE14; /* Ensure active links have the same color */
+      }
+
 
       @media (max-width: 768px) {
         nav {
@@ -108,8 +127,9 @@
 
       footer {
         padding: 20px;
-        background-color: #f1f1f1; /* Adjust the background color as needed */
+        background-color: #EDEDED; /* Adjust the background color as needed */
         text-align: center;
+        color: #495E57;
       }
 
       .footer-items {
@@ -126,18 +146,50 @@
 
       .footer-items a {
         text-decoration: none;
-        color: #000;
+        color: #495E57;
       }
 
       .footer-items a:hover {
-        color: #007BFF;
+        color: #F4CE14;
       }
 
       .heroLandingContainer {
+        margin-top: 25px;
         position: relative;
         overflow: hidden;
         padding-bottom: 0;
         transition: padding-bottom 0.5s ease-in-out;
+
+      }
+
+      .heroLandingHeading {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        top: 15px;
+        right: -40px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+      }
+
+      .heroLandingHeading h2, h4 {
+        margin: 0;
+      }
+
+      .heroLandingContainer > div > p {
+        margin-left: 40px;
+        text-align: start;
+        font-size: small;
+        margin-top: 50px;
+        width: 50%;
+        display: flex;
+        position: relative;
+
+      }
+
+      .heroLandingContainer > div > img {
+
       }
 
       .reservations {
@@ -163,6 +215,8 @@
       .reservations-wrapper.show {
         max-height: 400px; /* Adjust max-height based on the content of Reservations component */
       }
+
+
 
 
     </style>
