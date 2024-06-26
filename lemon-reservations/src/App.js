@@ -5,6 +5,8 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import HeroLanding from './components/HeroLanding';
 import Home from './components/Home';
+import CustomersSay from './components/CustomersSay';
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Header/>
         <HeroLanding/>
         <Home/>
+        <CustomersSay/>
+        <About/>
         <Main/>
         <Footer/>
     </div>
