@@ -126,12 +126,44 @@
 
       .footer-items a {
         text-decoration: none;
-        color: #000; /* Adjust the text color as needed */
+        color: #000;
       }
 
       .footer-items a:hover {
-        color: #007BFF; /* Adjust the hover color as needed */
+        color: #007BFF;
       }
+
+      .heroLandingContainer {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 0;
+        transition: padding-bottom 0.5s ease-in-out;
+      }
+
+      .reservations {
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .heroLandingContainer button {
+        z-index: 1100;
+      }
+
+      .heroLandingContainer .reservations-show {
+        bottom: 0; /* Slide into view */
+      }
+
+      .reservations-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+      }
+
+      .reservations-wrapper.show {
+        max-height: 400px; /* Adjust max-height based on the content of Reservations component */
+      }
+
 
     </style>
 
