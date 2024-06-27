@@ -14,9 +14,14 @@ const About = () => {
                     ipsa modi, officiis praesentium provident rem repellendus sit veniam? Aliquid commodi, dolores ex
                     facilis maxime molestias sapiente!</p>
             </div>
-            <div className="about__containerIMG">
-                <img src="/icons_assets/restaurant%20chef%20B.jpg" alt="Chef"/><img
-                src="/icons_assets/Mario%20and%20Adrian%20A.jpg" alt="Founders of Little Lemon"/>
+            <div className="aboutImage-Stack">
+                <div className="image-stack-item image-stack-item-top">
+                    <img src="/icons_assets/restaurant%20chef%20B.jpg" alt="Chef"/>
+                </div>
+                <div className="image-stack-item image-stack-item-bottom">
+                    <img src="/icons_assets/restaurant.jpg" alt="restaurant"/>
+                </div>
+
             </div>
         </div>
     );

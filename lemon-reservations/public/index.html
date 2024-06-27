@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
     <meta
-      name="description"
-      content="Little Lemon, a Mediterranean food restaurant putting a new spin on traditional meals!"
+            name="description"
+            content="Little Lemon, a Mediterranean food restaurant putting a new spin on traditional meals!"
     />
-    <meta name="og:title" content="Little Lemon Restaurant" />
-    <meta name="og:description" content="Little Lemon, a Mediterranean food restaurant putting a new spin on traditional meals!" />
+    <meta name="og:title" content="Little Lemon Restaurant"/>
+    <meta name="og:description"
+          content="Little Lemon, a Mediterranean food restaurant putting a new spin on traditional meals!"/>
     <meta name="og:image" content="Mario and Adrian A.jpg"/>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -30,302 +31,402 @@
 
     <style>
 
-      h1, h2, h3, h4, h5, h6 {
-        font-family: Markazi Text, serif;
-      }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Markazi Text, serif;
+        }
 
-      p, span {
-        font-family: Karla, sans-serif;
-      }
+        p, span {
+            font-family: Karla, sans-serif;
+        }
 
-      img {
-        border-radius: 8px;
-        max-width: 250px;
-        max-height: auto;
-      }
-
-
-
-      button {
-        background-color: #495E57;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: background-color 0.3s, transform 0.3s;
-      }
-
-      button:hover {
-        background-color: #F4CE14;
-      }
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
 
 
-      nav {
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 10px;
-        margin-right: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 10%;
-        color: #495E57;
-      }
+        button {
+            background-color: #495E57;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
 
-      .nav-items {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .nav-items > li {
-        margin-right: 15px;
-        color: #495E57;
-      }
-
-      .nav-items > li:last-child {
-        margin-right: 0;
-      }
+        button:hover {
+            background-color: #F4CE14;
+        }
 
 
-      .nav-items > li > a {
-        text-decoration: none;
-        color: #495E57;
-      }
-
-      .nav-items > li > a:visited {
-        color: #495E57;
-      }
-
-      .nav-items > li > a:hover {
-        color: #F4CE14;
-      }
-
-      .nav-items > li > a:active {
-        color: #F4CE14; /* Ensure active links have the same color */
-      }
-
-
-      @media (max-width: 768px) {
         nav {
-          flex-direction: column;
-          align-items: center;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 10px;
+            margin-right: 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10%;
+            color: #495E57;
         }
 
         .nav-items {
-          margin-top: 10px;
-        }
-      }
-
-
-      footer {
-        padding: 20px;
-        background-color: #EDEDED; /* Adjust the background color as needed */
-        text-align: center;
-        color: #495E57;
-      }
-
-      .footer-items {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 0;
-      }
-
-      .footer-items li {
-        display: inline;
-      }
-
-      .footer-items a {
-        text-decoration: none;
-        color: #495E57;
-      }
-
-      .footer-items a:hover {
-        color: #F4CE14;
-      }
-
-      .heroLandingContainer {
-        margin-top: 25px;
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 0;
-        transition: padding-bottom 0.5s ease-in-out;
-        background-color: #EDEDED;
-
-
-      }
-
-      .heroLandingHeading {
-        width: fit-content;
-        height: fit-content;
-        position: relative;
-        top: 15px;
-        right: -40px;
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-      }
-
-      .heroContainerContents {
-        margin-top: 50px;
-        display: flex;
-        align-content: start;
-        text-align: left;
-        flex-direction: row;
-
-      }
-
-      .heroContainerContents:first-child {
-        width: 90%;
-      }
-
-      .heroContainerContents p {
-        max-width: 65%;
-        margin-left: 40px;
-      }
-      .heroContainerContents button {
-        margin-left: 40px;
-        margin-bottom: 20px;
-      }
-
-      .heroLandingHeading h2 {
-        font-size: xx-large;
-        margin: 0;
-      }
-
-      .heroLandingHeading h4 {
-        font-size: x-large;
-        margin-top: 0;
-        margin-bottom: 15px;
-      }
-
-      .heroLandingImgContainer {
-        align-content: center;
-        align-items: center;
-        padding-right: 25px;
-        filter: drop-shadow(0px 10px 5px #495E57);
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-      .heroLandingContainer > div > p {
-        margin-left: 40px;
-        text-align: start;
-        font-size: small;
-        margin-top: 50px;
-        width: 50%;
-        display: flex;
-        position: relative;
+        .nav-items > li {
+            margin-right: 15px;
+            color: #495E57;
+        }
 
-      }
-
-      .reservations {
-        padding: 20px;
-        background-color: white;
-        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .heroButtonWrap {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 40px;
-        margin-bottom: 40px;
-      }
-
-      .heroLandingContainer .reservations-show {
-        bottom: 0;
-      }
-
-      .reservations-wrapper {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease-in-out;
-      }
-
-      .reservations-wrapper.show {
-        max-height: 400px; /* Adjust max-height based on the content of Reservations component */
-      }
-
-      .homeContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-      }
-      .homeContainer article {
-        width: 25%;
-        background-color: #EDEDED;
-        padding: 10px;
-        border-radius: 8px;
-        filter: drop-shadow(0px 10px 5px #495E57);
-        margin-top: 20px;
-        margin-bottom: 40px;
-        min-width: 265px;
-      }
-
-      .priceName {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-        color: #495E57;
-      }
-
-      .homeHeader {
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        justify-content: space-between;
-      }
-
-      .homeHeader h4, button {
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-
-      .homeHeader h4 {
-        font-size: xx-large;
-      }
-
-      .CustomerSay {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-
-      .reviewCard {
-        width: 20%;
-      }
+        .nav-items > li:last-child {
+            margin-right: 0;
+        }
 
 
+        .nav-items > li > a {
+            text-decoration: none;
+            color: #495E57;
+        }
+
+        .nav-items > li > a:visited {
+            color: #495E57;
+        }
+
+        .nav-items > li > a:hover {
+            color: #F4CE14;
+        }
+
+        .nav-items > li > a:active {
+            color: #F4CE14; /* Ensure active links have the same color */
+        }
+
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-items {
+                margin-top: 10px;
+            }
+        }
+
+
+        footer {
+            padding: 20px;
+            background-color: #EDEDED;
+            text-align: center;
+            color: #495E57;
+        }
+
+        .footer-items {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        .footer-items li {
+            display: inline;
+        }
+
+        .footer-items a {
+            text-decoration: none;
+            color: #495E57;
+        }
+
+        .footer-items a:hover {
+            color: #F4CE14;
+        }
+
+        .heroLandingContainer {
+            margin-top: 25px;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            transition: padding-bottom 0.5s ease-in-out;
+            background-color: #EDEDED;
+
+
+        }
+
+        .heroLandingHeading {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            top: 15px;
+            right: -40px;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+        }
+
+        .heroImageContainer {
+            width: 50%;
+            flex-shrink: 0;
+            min-width: 20rem;
+        }
+
+        .heroLandingImg {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            filter: drop-shadow(0px 10px 5px #495E57);
+
+
+
+        }
+
+        .heroContainerContents p {
+            max-width: 65%;
+            margin-left: 40px;
+        }
+
+        .heroContainerContents button {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .heroLandingHeading h2 {
+            font-size: xxx-large;
+            margin: 0;
+            color: #495E57;
+        }
+
+        .heroLandingHeading h4 {
+            font-size: xx-large;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #495E57;
+        }
+
+
+        .heroContainerContents {
+            max-width: 80rem;
+            margin: auto;
+            display: flex;
+            gap: 1rem;
+            text-align: left;
+
+        }
+
+
+
+        .heroLandingContainer > div > p {
+            margin-left: 40px;
+            text-align: start;
+            font-size: small;
+            margin-top: 50px;
+            width: 50%;
+            display: flex;
+            position: relative;
+
+        }
+
+        .reservations {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .heroButtonWrap {
+            display: flex;
+            justify-content: flex-start;
+
+        }
+
+        .heroLandingContainer .reservations-show {
+            bottom: 0;
+        }
+
+        .reservations-wrapper {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
+        }
+
+        .reservations-wrapper.show {
+            height: auto; /* Adjust max-height based on the content of Reservations component */
+            padding-top: 20px;
+        }
+
+        @media (max-width: 715px) {
+            .heroContainerContents {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .about {
+                flex-wrap: wrap;
+            }
+        }
+
+        .homeContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+
+        }
+
+        .homeContainer article {
+            width: 25%;
+            background-color: #EDEDED;
+            padding: 10px;
+            border-radius: 8px;
+            filter: drop-shadow(0px 10px 5px #495E57);
+            min-width: 265px;
+        }
+
+        .priceName {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            color: #495E57;
+        }
+
+        .homeHeader {
+            display: flex;
+            height: fit-content;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+        }
+
+        .homeHeader h4, button {
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .homeHeader h4 {
+            font-size: xx-large;
+        }
+
+
+        .custWrapDiv {
+            background-color: #495E57;
+            padding-bottom: 50px;
+        }
+
+        .custHeading {
+            text-align: start;
+            color: #F4CE14;
+            padding-left: 40px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+
+        .CustomerSay {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #495E57;
+            gap: 20px;
+        }
+
+        .reviewCard {
+            width: 20%;
+            min-width: 250px;
+            background-color: #EDEDED;
+            border-radius: 8px;
+            filter: drop-shadow(0px 10px 5px #495E57);
+        }
+
+        .nameStars {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .nameStars > p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .about__container {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 40px;
+        }
+
+        .about__title {
+            margin: 0;
+            color: #495E57;
+        }
+
+        .about__subtitle {
+            margin: 0;
+            padding-bottom: 10px;
+            color: #495E57;
+        }
+
+        .about__paragraph {
+            margin: 0;
+            width: 75%;
+        }
+
+        .aboutImage-Stack {
+            min-width: 40%;
+            margin: 40px;
+            width: 200%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            position: relative;
+        }
+
+        .image-stack-item-top {
+            grid-column: 1 / span 9;
+            grid-row: 1;
+            padding-top: 20%;
+            z-index: 1;
+        }
+
+        .image-stack-item-bottom {
+            grid-column: 15 / -12;
+            grid-row: 1;
+        }
 
 
     </style>
 
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
 </html>

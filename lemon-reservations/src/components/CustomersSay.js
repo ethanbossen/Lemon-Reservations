@@ -2,10 +2,14 @@ import React from 'react';
 
 const CustomersSay = () => {
     return (
+        <div className="custWrapDiv"> <h1 className="custHeading">Testimonials</h1>
         <div className="CustomerSay">
+
             <div className="reviewCard">
-                <div className="nameImgStars">
-                    <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+
+                <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+                <div className="nameStars">
+
                     <p>Lana Person</p>
                     <p>4 Stars</p>
                 </div>
@@ -18,8 +22,10 @@ const CustomersSay = () => {
                 </div>
             </div>
             <div className="reviewCard">
-                <div className="nameImgStars">
-                    <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+
+                <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+                <div className="nameStars">
+
                     <p>Lana Person</p>
                     <p>4 Stars</p>
                 </div>
@@ -32,8 +38,9 @@ const CustomersSay = () => {
                 </div>
             </div>
             <div className="reviewCard">
-                <div className="nameImgStars">
-                    <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+
+                <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+                <div className="nameStars">
                     <p>Lana Person</p>
                     <p>4 Stars</p>
                 </div>
@@ -46,8 +53,10 @@ const CustomersSay = () => {
                 </div>
             </div>
             <div className="reviewCard">
-                <div className="nameImgStars">
-                    <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+
+                <img src="/icons_assets/reviewer.jpg" alt="person who left review"/>
+                <div className="nameStars">
+
                     <p>Lana Person</p>
                     <p>4 Stars</p>
                 </div>
@@ -60,8 +69,9 @@ const CustomersSay = () => {
                 </div>
             </div>
         </div>
-    )
-        ;
+        </div>
+    );
+
 };
 
 export default CustomersSay;

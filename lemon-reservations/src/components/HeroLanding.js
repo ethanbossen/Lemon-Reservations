@@ -12,7 +12,8 @@ const HeroLanding = () => {
         <div className="heroLandingContainer">
 
             <div className="heroContainerContents">
-                <div>
+
+                <div className="heroContent">
                     <div className="heroLandingHeading">
                         <h2>Little Lemon</h2>
                         <h4>Chicago</h4>
@@ -22,15 +23,17 @@ const HeroLanding = () => {
                         quam,
                         quod reiciendis rerum saepe totam.
                     </p>
+                    <div className="heroButtonWrap">
+                        <button onClick={toggleReservations}>Reserve Table</button>
+                    </div>
 
                 </div>
-                <div className="heroLandingImgContainer">
+                <div className="heroImageContainer">
                     <img className="heroLandingImg" src="/icons_assets/bruchetta.svg" alt="Little Lemon Bruchetta"/>
                 </div>
+
             </div>
-            <div className="heroButtonWrap">
-                <button onClick={toggleReservations}>Reserve Table</button>
-            </div>
+
             <div className={`reservations-wrapper ${showReservations ? 'show' : ''}`}>
                 <Reservations/>
             </div>
