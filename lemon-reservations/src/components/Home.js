@@ -5,7 +5,7 @@ const Home = () => {
         <div className="HomePage">
             <div className="homeHeader">
                 <h4>Specials</h4>
-                <button></button>
+                <button>Order Now</button>
             </div>
             <div className="homeContainer">
                 <article><img src="/icons_assets/greek%20salad.jpg" alt="greek salad"/>

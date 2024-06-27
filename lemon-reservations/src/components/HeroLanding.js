@@ -28,7 +28,7 @@ const HeroLanding = () => {
                     <img className="heroLandingImg" src="/icons_assets/bruchetta.svg" alt="Little Lemon Bruchetta"/>
                 </div>
             </div>
-            <div className="heroContainerContents">
+            <div className="heroButtonWrap">
                 <button onClick={toggleReservations}>Reserve Table</button>
             </div>
             <div className={`reservations-wrapper ${showReservations ? 'show' : ''}`}>

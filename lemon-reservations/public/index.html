@@ -184,6 +184,10 @@
 
       }
 
+      .heroContainerContents:first-child {
+        width: 90%;
+      }
+
       .heroContainerContents p {
         max-width: 65%;
         margin-left: 40px;
@@ -222,17 +226,17 @@
 
       }
 
-
-
       .reservations {
         padding: 20px;
         background-color: white;
         box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
       }
 
-      .heroLandingContainer button {
-        z-index: 1100;
-
+      .heroButtonWrap {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 40px;
+        margin-bottom: 40px;
       }
 
       .heroLandingContainer .reservations-show {
@@ -247,6 +251,60 @@
 
       .reservations-wrapper.show {
         max-height: 400px; /* Adjust max-height based on the content of Reservations component */
+      }
+
+      .homeContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+      }
+      .homeContainer article {
+        width: 25%;
+        background-color: #EDEDED;
+        padding: 10px;
+        border-radius: 8px;
+        filter: drop-shadow(0px 10px 5px #495E57);
+        margin-top: 20px;
+        margin-bottom: 40px;
+        min-width: 265px;
+      }
+
+      .priceName {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        color: #495E57;
+      }
+
+      .homeHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+      }
+
+      .homeHeader h4, button {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .homeHeader h4 {
+        font-size: xx-large;
+      }
+
+      .CustomerSay {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .reviewCard {
+        width: 20%;
       }
 
 
