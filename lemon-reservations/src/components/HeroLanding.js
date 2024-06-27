@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import Reservations from './Reservations'; // Ensure this path is correct
+import React, { useState } from 'react';
+import Reservations from './Reservations';
 
-const HeroLanding = () => {
+const HeroLanding = ({ availableTimes, setAvailableTimes }) => {
     const [showReservations, setShowReservations] = useState(false);
 
     const toggleReservations = () => {
@@ -10,9 +10,7 @@ const HeroLanding = () => {
 
     return (
         <div className="heroLandingContainer">
-
             <div className="heroContainerContents">
-
                 <div className="heroContent">
                     <div className="heroLandingHeading">
                         <h2>Little Lemon</h2>
@@ -26,16 +24,13 @@ const HeroLanding = () => {
                     <div className="heroButtonWrap">
                         <button onClick={toggleReservations}>Reserve Table</button>
                     </div>
-
                 </div>
                 <div className="heroImageContainer">
                     <img className="heroLandingImg" src="/icons_assets/bruchetta.svg" alt="Little Lemon Bruchetta"/>
                 </div>
-
             </div>
-
             <div className={`reservations-wrapper ${showReservations ? 'show' : ''}`}>
-                <Reservations/>
+                <Reservations availableTimes={availableTimes} />
             </div>
         </div>
     );

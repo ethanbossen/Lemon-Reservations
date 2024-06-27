@@ -1,10 +1,11 @@
 import React from 'react';
+import ReservationForm from './ReservationForm';
 
-const Reservations = () => {
+const Reservations = ({ availableTimes }) => {
     return (
         <div className="reservations">
             <h3>Make a Reservation</h3>
-            {/* Add reservation form or details here */}
+            <ReservationForm availableTimes={availableTimes} />
         </div>
     );
 };
