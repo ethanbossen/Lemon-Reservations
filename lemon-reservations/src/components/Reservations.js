@@ -1,11 +1,11 @@
 import React from 'react';
 import ReservationForm from './ReservationForm';
 
-const Reservations = ({ availableTimes, dispatch }) => {
+const Reservations = ({ submitForm, availableTimes, dispatch }) => {
     return (
         <div className="reservations">
             <h3>Make a Reservation</h3>
-            <ReservationForm availableTimes={availableTimes} dispatch={dispatch} />
+            <ReservationForm submitForm={submitForm} availableTimes={availableTimes} dispatch={dispatch} />
         </div>
     );
 };

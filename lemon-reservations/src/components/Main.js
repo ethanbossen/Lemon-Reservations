@@ -3,7 +3,7 @@ import HeroLanding from './HeroLanding';
 import Home from './Home';
 import CustomersSay from './CustomersSay';
 import About from './About';
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useNavigate } from "react-router-dom";
 import BookingConfirmation from "./BookingConfirmation";
 
 
@@ -20,8 +20,18 @@ const updateTimes = (state, action) => {
     }
 };
 
+
+
 const Main = () => {
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
+    const navigate = useNavigate();
+
+    const submitForm = async (formData) => {
+        const success = await window.submitAPI(formData);
+        if (success) {
+            navigate('/reservations');
+        }
+    };
 
     return (
         <div>
