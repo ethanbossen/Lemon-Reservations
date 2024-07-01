@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ReservationForm = ({ availableTimes, dispatch }) => {
+const ReservationForm = ({ availableTimes = [], dispatch }) => {
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState(1);

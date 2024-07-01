@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Reservations from './Reservations';
 
-const HeroLanding = ({ availableTimes, setAvailableTimes }) => {
+const HeroLanding = ({ availableTimes, dispatch }) => {
     const [showReservations, setShowReservations] = useState(false);
 
     const toggleReservations = () => {
@@ -30,7 +30,7 @@ const HeroLanding = ({ availableTimes, setAvailableTimes }) => {
                 </div>
             </div>
             <div className={`reservations-wrapper ${showReservations ? 'show' : ''}`}>
-                <Reservations availableTimes={availableTimes} />
+                <Reservations availableTimes={availableTimes} dispatch={dispatch} />
             </div>
         </div>
     );
