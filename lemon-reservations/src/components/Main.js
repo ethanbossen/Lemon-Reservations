@@ -1,11 +1,10 @@
 import React, { useReducer } from 'react';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import HeroLanding from './HeroLanding';
 import Home from './Home';
 import CustomersSay from './CustomersSay';
 import About from './About';
-import {Route, Routes, useNavigate } from "react-router-dom";
 import BookingConfirmation from "./BookingConfirmation";
-
 
 const initializeTimes = () => {
     return window.fetchAPI(new Date());
@@ -20,28 +19,24 @@ const updateTimes = (state, action) => {
     }
 };
 
-
-
 const Main = () => {
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
     const navigate = useNavigate();
 
-    const submitForm = async (formData) => {
-        const success = await window.submitAPI(formData);
-        if (success) {
-            navigate('/reservations');
+    const submitForm = (formData) => {
+        if (window.submitAPI(formData)) {
+            navigate('/reservations', { state: formData });
         }
     };
 
     return (
         <div>
             <Routes>
-                <Route path="/"  />
-                <Route path="/about" element={<About/>} />
-                <Route path="/reservations" element={<BookingConfirmation/>} />
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/reservations" element={<BookingConfirmation />} />
             </Routes>
-            <HeroLanding availableTimes={availableTimes} dispatch={dispatch} />
-            <Home />
+            <HeroLanding submitForm={submitForm} availableTimes={availableTimes} dispatch={dispatch} />
             <CustomersSay />
             <About />
         </div>
