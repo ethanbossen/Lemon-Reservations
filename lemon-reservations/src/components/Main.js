@@ -5,15 +5,16 @@ import Home from './Home';
 import CustomersSay from './CustomersSay';
 import About from './About';
 import BookingConfirmation from "./BookingConfirmation";
+import { fetchAPI } from '../api'
 
 const initializeTimes = () => {
-    return window.fetchAPI(new Date());
+    return fetchAPI(new Date());
 };
 
 const updateTimes = (state, action) => {
     switch (action.type) {
         case 'UPDATE_TIMES':
-            return window.fetchAPI(new Date(action.payload));
+            return fetchAPI(new Date(action.payload));
         default:
             return state;
     }
