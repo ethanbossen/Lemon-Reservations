@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 
-const ReservationForm = ({ availableTimes }) => {
+const ReservationForm = ({ availableTimes, dispatch }) => {
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('');
 
-    const handleDateChange = (e) => setDate(e.target.value);
+    const handleDateChange = (e) => {
+        setDate(e.target.value);
+        dispatch({ type: 'UPDATE_TIMES', payload: e.target.value });
+    };
+
     const handleTimeChange = (e) => setTime(e.target.value);
     const handleGuestsChange = (e) => setGuests(e.target.value);
     const handleOccasionChange = (e) => setOccasion(e.target.value);
